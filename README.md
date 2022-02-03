@@ -1,2 +1,2 @@
 # OA_Java_start
-Introductive exercices in programming bases 
+Introductive exercises in programming bases 
