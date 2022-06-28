@@ -59,5 +59,14 @@ public class Main {
         Pig2 myPig2 = new Pig2();
         myPig2.animalSound2();
         myPig2.sleep();
+        // interfaces -On implementation of an interface, you must override all of its methods
+        System.out.println("ABSTRACTION WITH INTERFACES:");
+        Pig3 myPig3 = new Pig3();
+        myPig3.animalSound3();
+        myPig3.sleep3();
+        // multiple interfaces
+        DemoClass demo = new DemoClass();
+        demo.myMethod();
+        demo.myOtherMethod();
     }
 }

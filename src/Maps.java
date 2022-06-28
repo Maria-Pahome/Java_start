@@ -10,6 +10,7 @@ public class Maps {
         note_elevi.put("Gigel", 10);
         note_elevi.put("Costel", 9);
         note_elevi.put("Ana", 10);
+        System.out.println(note_elevi);
 
         //aflu notele
         System.out.println("Ana are note " + note_elevi.get("Ana"));
@@ -34,5 +35,6 @@ public class Maps {
             put("mar", 3);
         }};
         System.out.println(luni);
+
     }
 }

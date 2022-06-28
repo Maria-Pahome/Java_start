@@ -1,9 +1,12 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Array {
     public static void main(String[] args) {
         //declarare si initializare cand stim valorile
         String[] elevi = {"Gigel", "Costel", "Mari", "Ela", "Ada", "Mari"};
 
-        String [] properties = {"browser name", "platform", "version", "release state"};
+        String[] properties = {"browser name", "platform", "version", "release state"};
 
         int[] numere = {1, 33, 81, 99, 101};
         //contine mai multe elemente de acelasi tip
