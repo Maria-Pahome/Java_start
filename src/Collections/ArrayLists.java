@@ -14,7 +14,7 @@ public class ArrayLists {
         colors.add("purple");
         System.out.println(colors);
 
-        // to copy one array list into another
+        // another array list
         ArrayList<String> numbers = new ArrayList<String>();
         numbers.add("0");
         numbers.add("1");
@@ -93,6 +93,26 @@ public class ArrayLists {
         clonedNumbers.add("54");
         System.out.println(clonedNumbers);
 
+        // to empty an array list
+        cloned.clear();
+        System.out.println("Empty array: " + cloned);
+
+        // to test an array list is empty or not
+        System.out.println(cloned.isEmpty());
+
+        // to trim the capacity of an array list the current list size
+        colors.trimToSize();
+
+        //to increase the size of an array list
+        try{
+            System.out.println("Original array: " + colors);
+            System.out.println("Increasing the capacity of ArrayList numbers to store up to 10 colors");
+//            colors.ensureCapacity(10);
+            System.out.println(
+                    "ArrayList numbers can now store up to 10 elements.");
+        } catch(NullPointerException e){
+            System.out.println("Exception thrown :" + e);
+        }
     }
 }
 
