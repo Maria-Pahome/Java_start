@@ -113,6 +113,15 @@ public class ArrayLists {
         } catch(NullPointerException e){
             System.out.println("Exception thrown :" + e);
         }
+        //to replace the second element of a ArrayList with the specified element
+        colors.set(2, "bright-red");
+        System.out.println(colors);
+
+        // to print all the elements of a ArrayList using the position of the elements
+        int nr_of_elements = colors.size();
+        for(int i = 0; i < nr_of_elements; i++){
+            System.out.println(colors.get(i));
+        }
     }
 }
 
