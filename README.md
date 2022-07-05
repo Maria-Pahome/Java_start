@@ -9,4 +9,4 @@ Introductive exercises in Java programming bases
 * loops
 * array
 * OOP 
-* String exercices
+* String exercises
