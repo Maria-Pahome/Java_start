@@ -1,7 +1,5 @@
 package Collections;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.Iterator;
+import java.util.*;
 
 public class LinkedLists {
     public static void main(String[] args) {
@@ -54,7 +52,7 @@ public class LinkedLists {
         System.out.println(professions);
 
         // to insert some elements at the specified position into a linked list
-        LinkedList<String> numbers = new LinkedList<String>();
+        LinkedList<String> numbers = new LinkedList<>();
         numbers.add("23");
         numbers.add("24");
         numbers.add("25");
@@ -96,7 +94,7 @@ public class LinkedLists {
         System.out.println("After shuffling: " + professions);
 
         // to join two linked lists
-        LinkedList<String> alphabet = new LinkedList<String>();
+        LinkedList<String> alphabet = new LinkedList<>();
         alphabet.add("a");
         alphabet.add("b");
         alphabet.add("c");
@@ -105,5 +103,52 @@ public class LinkedLists {
         alphabet.addAll(professions);
         System.out.println(alphabet);
 
+        // to remove and return the first element of a linked list
+        System.out.println("Before: " + professions);
+        professions.pop();
+        System.out.println("After: " + professions);
+
+        // to retrieve but does not remove, the first element of a linked list
+        System.out.println("Retrieving first element: " + professions);
+        System.out.println("Retrieving: " + professions.peekFirst());
+
+        // to retrieve but does not remove, the last element of a linked list
+        System.out.println("Retrieving last element: " + professions);
+        System.out.println("Retrieving the last : " + professions.peekLast());
+
+        //  to check if a particular element exists in a linked list
+        System.out.println(professions.contains("shopper"));
+
+        // to convert a linked list to array list
+        numbers.add("20");
+        numbers.add("21");
+        numbers.add("22");
+        numbers.add("23");
+        System.out.println("LinkedList: " + numbers);
+        List<String> arrayList = new ArrayList<>(numbers);
+        for(Object i:arrayList){
+            System.out.println("String in array list: " + i);
+        }
+        System.out.println("ArrayList: " + arrayList);
+
+        // to compare two linked lists
+        boolean compare = professions.equals(numbers);
+        System.out.println(compare);
+
+        LinkedList<String> compared = new LinkedList<>();
+        for(String x: professions){
+            compared.add(numbers.contains(x) ? "Yes!" : "No!");
+        }
+        System.out.println(compared);
+        compared.clear();
+
+        // to test a linked list is empty or not
+        System.out.println(numbers.isEmpty());
+        System.out.println(professions.isEmpty());
+        System.out.println(compared.isEmpty());
+
+        // to replace an element in a linked list
+        numbers.set(0, "19");
+        System.out.println(numbers);
     }
 }
